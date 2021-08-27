@@ -8,10 +8,6 @@ function BookList() {
   return (
     <article>
       <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
     </article>
   );
 }

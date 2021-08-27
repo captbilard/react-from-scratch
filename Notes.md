@@ -24,3 +24,7 @@ Most likely the 'root' div
  - HTML attributes must be in **camelCase**
  - For a HTML class, you use **className** instead of the regular 'class'
  - Close every element
+
+### Nesting Components
+You can nest multiple components and then render just the parent component making your work easier.
+Also when exporting use `export default app` & the apps should all be in the `src/` folder
