@@ -1,22 +1,20 @@
 import React from "react";
 import ReactDom from "react-dom";
+import Book from './book'
 
 
 
-function Greeting() {
+function BookList() {
   return (
-    <div>
-      <h3 style={{ "color":"red"}}>
-        This is how we roll, we ensure to always stand out from the crowd like
-        stars
-      </h3>
-      <ul>
-        <li>Benshima</li>
-        <li>Rejoice</li>
-        <li>Destiny</li>
-      </ul>
-    </div>
+    <article>
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+    </article>
   );
 }
 
-ReactDom.render(<Greeting />, document.getElementById("root"));
+
+ReactDom.render(<BookList />, document.getElementById("root"));
