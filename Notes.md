@@ -36,3 +36,6 @@ Note we didn't put a name for the import, this is the convention and how it work
 
  ### JavaScript in JSX
  Like it was mentioned in the "CSS in React" section above. To use JavaScript in JSX you start with curly braces `{}`. Note that the expression must return something for it to work. If you just pass in a statement it would throw an error. For example `{ let x= 6 }` would throw up an error but the expression `{ 6+6 }` would work perfectly.
+
+ ### Props 
+ Props are object like arguments you pass in to your react components, with "props" you can access the various object properties that were passed in when your component is rendered. You can also use ES6 object destructuring for your props
