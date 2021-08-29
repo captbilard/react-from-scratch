@@ -13,11 +13,10 @@ const firstBook = {
 };
 
 const secondBook = {
-  title:"The 48 Laws of Power",
+  title: "The 48 Laws of Power",
   img: "https://images-na.ssl-images-amazon.com/images/I/71951W96oWL._AC_UL200_SR200,200_.jpg",
-  author : "Robert Greene"
-}
-
+  author: "Robert Greene",
+};
 
 function BookList() {
   return (
@@ -26,7 +25,13 @@ function BookList() {
         title={firstBook.title}
         author={firstBook.author}
         img={firstBook.img}
-      />
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          laudantium harum quas sed eius iure deleniti nisi dolore pariatur
+          excepturi.
+        </p>
+      </Book>
       <Book
         title={secondBook.title}
         author={secondBook.author}

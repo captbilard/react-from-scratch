@@ -39,3 +39,8 @@ Note we didn't put a name for the import, this is the convention and how it work
 
  ### Props 
  Props are object like arguments you pass in to your react components, with "props" you can access the various object properties that were passed in when your component is rendered. You can also use ES6 object destructuring for your props
+
+ ### Props Children
+ This is a very unique property that must bear the name "children". It is placed between the components being rendered.
+ For example if we're to render `Book` component, then we would place the children prop in `<Book> <p>Lorem ipsum dior </p> </Book>`. The entire p tag and it's property are the children prop.
+ You can access them by using props.children or other destructuring method
