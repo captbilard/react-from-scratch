@@ -6,37 +6,30 @@ import Book from "./book";
 import "./index.css";
 
 //Data Objects
-const firstBook = {
-  title: "The seven Husbands of Evelyn Hugo: A Novel",
-  author: "Taylor Jenkins Reid",
-  img: "https://images-na.ssl-images-amazon.com/images/I/71WAr4M5NlS._AC_UL200_SR200,200_.jpg",
-};
+const books = [
 
-const secondBook = {
-  title: "The 48 Laws of Power",
-  img: "https://images-na.ssl-images-amazon.com/images/I/71951W96oWL._AC_UL200_SR200,200_.jpg",
-  author: "Robert Greene",
-};
+  {
+    title: "The seven Husbands of Evelyn Hugo: A Novel",
+    author: "Taylor Jenkins Reid",
+    img: "https://images-na.ssl-images-amazon.com/images/I/71WAr4M5NlS._AC_UL200_SR200,200_.jpg",
+  },
+  
+  {
+    title: "The 48 Laws of Power",
+    img: "https://images-na.ssl-images-amazon.com/images/I/71951W96oWL._AC_UL200_SR200,200_.jpg",
+    author: "Robert Greene",
+  },
+]
+const testArr = ["babra", "dobie", "sodiq"]
+
+const mappedArr = testArr.map((elem) => {
+  return <h4>{ elem }</h4>
+})
 
 function BookList() {
   return (
     <section>
-      <Book
-        title={firstBook.title}
-        author={firstBook.author}
-        img={firstBook.img}
-      >
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-          laudantium harum quas sed eius iure deleniti nisi dolore pariatur
-          excepturi.
-        </p>
-      </Book>
-      <Book
-        title={secondBook.title}
-        author={secondBook.author}
-        img={secondBook.img}
-      />
+      {mappedArr}
     </section>
   );
 }
