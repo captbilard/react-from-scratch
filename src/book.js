@@ -2,11 +2,11 @@ import React from 'react'
 
 const Book = () => {
   return (
-    <div>
+    <article>
       <Image />
       <Title />
       <Author />
-    </div>
+    </article>
   )
 }
 
@@ -14,17 +14,21 @@ const Image = () => {
     return (
       <img
         src="https://images-na.ssl-images-amazon.com/images/I/71WAr4M5NlS._AC_UL200_SR200,200_.jpg"
-        alt=""
+        alt="" style={{marginTop:"0.8rem"}}
       />
     );
 }
 
+const title = "The seven Husbands of Evelyn Hugo: A Novel"
+
 const Title = () => {
-  return <h3>The Seven Husbands of Evelyn Hugo: A Novel</h3>;
+  return <h3>{title}</h3>;
 }
 
+const author = "Taylor Jenkins Reid"
+
 const Author = () => {
-  return <p style={{"fontWeight":"bold"}}>Taylor Jenkins Reid</p>;
+  return <p style={{ fontWeight: "bold", fontSize: "0.75rem" }}>{ author.toUpperCase()}</p>;
 }
 
 export default Book

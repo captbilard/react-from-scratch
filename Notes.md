@@ -28,3 +28,11 @@ Most likely the 'root' div
 ### Nesting Components
 You can nest multiple components and then render just the parent component making your work easier.
 Also when exporting use `export default app` & the apps should all be in the `src/` folder
+
+### CSS in React
+To import css inside react, all you do is `import './index.css'`. 
+Note we didn't put a name for the import, this is the convention and how it works.
+ Another method is by using "style" in your jsx/html. Style takes in two curly braces & that's because, the first one let's React know we're going into JavaScript mode then the second one is to let JS know it's an object.
+
+ ### JavaScript in JSX
+ Like it was mentioned in the "CSS in React" section above. To use JavaScript in JSX you start with curly braces `{}`. Note that the expression must return something for it to work. If you just pass in a statement it would throw an error. For example `{ let x= 6 }` would throw up an error but the expression `{ 6+6 }` would work perfectly.
