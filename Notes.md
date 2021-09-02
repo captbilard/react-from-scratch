@@ -39,3 +39,12 @@ Note we didn't put a name for the import, this is the convention and how it work
 
  ### Props 
  Props are object like arguments you pass in to your react components, with "props" you can access the various object properties that were passed in when your component is rendered. You can also use ES6 object destructuring for your props
+ 
+ ### Events In React
+ With Events we're able to invoke a function or make JS do something when a specific action is done. Events needs two things
+  - Attribute
+  - Event Handler
+  #### Attribute
+   This are the varius attributes that describe the actions, for example we have onClick, onMouseOver etc. You can check more [here](https://reactjs.org/docs/events.html).
+  #### Event Handler
+  This are just functions that get executed when the action described by the attribute is done. This even handlers are passed into JSX in the format `onClick={showFunc}`. If your function/handler takes in an argument then you wouldn't pass it directly with the format described as passing it directly causes the function to be invoked directly. For such cases you need to pass the function inside a function. e.g. `onMouseOver={() => {funcWithArg(args)}}`.
