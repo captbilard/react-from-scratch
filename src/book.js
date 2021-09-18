@@ -2,7 +2,8 @@ import React from "react";
 
 const Book = (props) => {
   //Using object destructuring
-  const {img,title,author} = props
+  console.log(props);
+  const {img,title,author} = props.book
   return (
     <article>
       <img src={img} style={{ marginTop: "0.8rem" }} alt="" />

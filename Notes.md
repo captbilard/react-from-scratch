@@ -46,4 +46,7 @@ Note we didn't put a name for the import, this is the convention and how it work
  You can access them by using props.children or other destructuring method
 
  ### Rendering Array
- In react you can render an array in your jsx, the only gotcha is that the array mustn't be an array of objects. E.g `return <section>{arrayName}</section>;`. Rather than just rending the element bare, you can use the array map method to map an html tag to the elements og the array, then use the new array
+ In react you can render an array in your jsx, the only gotcha is that the array mustn't be an array of objects. E.g `return <section>{arrayName}</section>;`. Rather than just rending the element bare, you can use the array map method to map an html tag to the elements og the array, then use the new array.
+
+ ### Rendering Array of Object
+ To render an array of objects, you use the map method inside your jsx, then return whatever you want. You can return a component in the map return method and pass it the item from the call back function.

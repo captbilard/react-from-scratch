@@ -20,16 +20,16 @@ const books = [
     author: "Robert Greene",
   },
 ]
-const testArr = ["babra", "dobie", "sodiq"]
 
-const mappedArr = testArr.map((elem) => {
-  return <h4>{ elem }</h4>
-})
+
+
 
 function BookList() {
   return (
     <section>
-      {mappedArr}
+      {books.map((item) => {
+        return <Book book={item}/>
+      })}
     </section>
   );
 }
